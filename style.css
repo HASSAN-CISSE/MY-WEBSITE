@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: green;
+    background-color: white;
+    line-height: 1.8;
+}
+
+header {
+    background-color: white;
+    color: green;
+    padding: 25px;
+}
+
+main {
+    background-color: white;
+    color: green;
+    max-width: 100;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.col-system {
+    display: grid;
+    grid-tempelate-columns:repeat(12, 1fr); gap:20px;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+col-4 {
+    grid-column: span 4;
+}
+
+col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span6;
+}
+
+.col-7 {
+    grid-column: span7;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.section-pad {
+    padding: 90px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-tag {
+    color: #c96b1a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    background-color: greenyellow;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #c96b1a;
+}
+
+.navbar-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #c96b1a;
+    color: #fff;
+}
+
+.btn-primary-hover {
+    transform: translateX(-2px);
+    background: #ad5b14;
+}
+
+.btn-secondary {
+    border: 1px solid #c96b1a;
+    color: #c96b1a;
+    background: transparent;
+}
+
+.btn-secondary-hover {
+    background-color: #c96b1a;
+    color: #fff;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: linear-gradient(rgba(53,25,7,0.45),rgba(53,25,7,0.45));
+    url("c:\Users\SKILLS ACADEMY\Downloads\Futuristic Blue-Lit Operating Theatre.png")center/cover no-repeat;
+    color: #fff;
+}
+
+.hero-grid {
+    align-items: center;
+    padding: 80px, 0;
+}
+
+.hero-content h1 {
+    font-family: Georgia,  serif;
+    font-size: 5rem;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.lead {
+    max-width: 560px;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    margin-bottom: 14px;
+    color: black;
+    font-weight: 700;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.hro-image img {
+    min-height: 520px;
+    object-fit: cover;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    background: black;
+    margin-top: 60px;
+}
+
+.about-grid {
+    align-items: center;
+}
+
+.about-text h2,
+.services h2,
+.cta h23 {
+    font-family: Georgia,  serif;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.about-text p {
+    margin-bottom: 14px;
+    max-width: 600px;
+}
+
+service-grid {
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: green;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05)
+    transition: 0.3s ease;
+}
+
+.service-card img {
+    height: 240px;
+    object-fit: initial;
+    border-radius: 0;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin: 18px 18px 10px;
+}
+
+.service-card p {
+    margin: 0.18px 22px;
+    color: green;
+}
+
+.gallery-grid {
+    margin-top: 40px;
+}
+
+.gallery-grid img {
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+.cta {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.cta-box {
+    background: linear-gradient(green);
+    border-radius: 28px;
+    padding: 50px 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.cta-inner {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cta-inner p {
+    max-width: 680px;
+    margin: 0 auto 24px;
+    color: greenyellow;
+}
+
+.center-buttons {
+    justify-content: center;
+}
+
+.footer {
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    padding-top: 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-icons {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sociaal-icons a:hover {
+    color: #e1306c;
+}
+
+.footer-grid {
+    padding-bottom: 40px;
+    align-items: start;
+}
+
+.footer-brand h3,
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 16px;
+    background-color: greenyellow;
+    color: black;
+    font-family: Georgia,  serif;
+}
+
+.footer-brand p,
+.footer-contact p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: black;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f5d3b2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: greenyellow;
+    color: black;
+    font-size: 0.95rem;
+}
